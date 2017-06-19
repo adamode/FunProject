@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="193" id="KGk-i7-Jjw" customClass="DrinkCell" customModule="FoodMenuSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="555" height="193"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="555" height="192.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drink1" translatesAutoresizingMaskIntoConstraints="NO" id="MdL-yd-fDJ">
+                        <rect key="frame" x="8" y="8" width="174.5" height="176.5"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drink2" translatesAutoresizingMaskIntoConstraints="NO" id="2oT-bY-TxG">
+                        <rect key="frame" x="190.5" y="8" width="174" height="176.5"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drink3" translatesAutoresizingMaskIntoConstraints="NO" id="Hop-k9-5lq">
+                        <rect key="frame" x="372.5" y="8" width="174.5" height="176.5"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2oT-bY-TxG" firstAttribute="top" secondItem="MdL-yd-fDJ" secondAttribute="top" id="3w3-5l-mwc"/>
+                    <constraint firstItem="Hop-k9-5lq" firstAttribute="leading" secondItem="2oT-bY-TxG" secondAttribute="trailing" constant="8" id="7DR-da-eso"/>
+                    <constraint firstItem="2oT-bY-TxG" firstAttribute="leading" secondItem="MdL-yd-fDJ" secondAttribute="trailing" constant="8" id="C1z-AA-DyQ"/>
+                    <constraint firstItem="Hop-k9-5lq" firstAttribute="width" secondItem="MdL-yd-fDJ" secondAttribute="width" id="M7N-K6-iD8"/>
+                    <constraint firstAttribute="bottom" secondItem="MdL-yd-fDJ" secondAttribute="bottom" constant="8" id="Nb3-wU-N6i"/>
+                    <constraint firstItem="2oT-bY-TxG" firstAttribute="bottom" secondItem="MdL-yd-fDJ" secondAttribute="bottom" id="Onz-a8-QZJ"/>
+                    <constraint firstItem="Hop-k9-5lq" firstAttribute="bottom" secondItem="MdL-yd-fDJ" secondAttribute="bottom" id="SQm-dU-QSZ"/>
+                    <constraint firstAttribute="trailing" secondItem="Hop-k9-5lq" secondAttribute="trailing" constant="8" id="VO9-9e-hiw"/>
+                    <constraint firstItem="Hop-k9-5lq" firstAttribute="top" secondItem="MdL-yd-fDJ" secondAttribute="top" id="YrG-Hc-gX4"/>
+                    <constraint firstItem="MdL-yd-fDJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="dDL-mq-Mq2"/>
+                    <constraint firstItem="2oT-bY-TxG" firstAttribute="width" secondItem="MdL-yd-fDJ" secondAttribute="width" id="fCG-0H-fQW"/>
+                    <constraint firstItem="MdL-yd-fDJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="jas-UI-7sS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outletCollection property="drinkImageViews" destination="MdL-yd-fDJ" collectionClass="NSMutableArray" id="qan-2R-JlG"/>
+                <outletCollection property="drinkImageViews" destination="2oT-bY-TxG" collectionClass="NSMutableArray" id="hbl-JP-YWd"/>
+                <outletCollection property="drinkImageViews" destination="Hop-k9-5lq" collectionClass="NSMutableArray" id="ec8-oV-yyi"/>
+            </connections>
+            <point key="canvasLocation" x="176.5" y="35.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="drink1" width="640" height="427"/>
+        <image name="drink2" width="640" height="362"/>
+        <image name="drink3" width="640" height="426"/>
+    </resources>
+</document>
